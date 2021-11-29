@@ -3,6 +3,22 @@
 \usepackage{ctex}
 %超链接所用的包
 \usepackage[colorlinks,linkcolor=blue]{hyperref}
+%代码
+\usepackage{listings}
+\usepackage{xcolor}
+\lstset{
+	columns=fixed,       
+	numbers=left,                                        % 在左侧显示行号
+	numberstyle=\tiny\color{gray},                       % 设定行号格式
+	frame=none,                                          % 不显示背景边框
+	backgroundcolor=\color[RGB]{245,245,244},            % 设定背景颜色
+	keywordstyle=\color[RGB]{40,40,255},                 % 设定关键字颜色
+	numberstyle=\footnotesize\color{darkgray},           
+	commentstyle=\it\color[RGB]{0,96,96},                % 设置代码注释的格式
+	stringstyle=\rmfamily\slshape\color[RGB]{128,0,0},   % 设置字符串格式
+	showstringspaces=false,                              % 不显示字符串中的空格
+	language=c++,                                        % 设置语言
+}
 % 统一修改正文和数学字体为Adobe Utopia
 \usepackage{fourier}
 \usepackage{indentfirst}
@@ -88,5 +104,25 @@
 	This part is the Summary of this experiment.
 	
 	
-	这部分书写实验的总结。
+	这部分书写实验的总结
+	
+	
+	\section{Appendix}。
+	
+	
+	This part is the code of this experiment.
+	
+	
+	这个部分中包含本次实验过程中的代码。
+	\begin{lstlisting}
+		% 代码段
+		#include<iostream>
+		using namespace std;
+		int main()
+		{
+			cout<<"Hello World!"<<"\n";
+			return 0;	
+		}
+	\end{lstlisting}
+	
 \end{document}
